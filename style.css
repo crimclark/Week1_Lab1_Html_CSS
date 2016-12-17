@@ -1,0 +1,80 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+#name {
+  float:left;
+  margin-left: 2%;
+}
+
+#name, .navlink {
+  padding: 3px;
+  border-bottom: 2px solid black;
+}
+
+nav {
+  width: 75%;
+}
+
+ul {
+  text-align: justify;
+  margin: 5% 5% 0 65%;
+  width: 60%;
+}
+
+li {
+  display: inline-block;
+}
+
+ul:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  border-left: 2px solid black;
+}
+
+.navlink:hover {
+  padding-top: 1px;
+  padding-right: 1px;
+  font-weight: bold;
+  border: 2px solid black;
+    background-color: black;
+  color: white;
+    transition: color 1s;
+  transition: background-color 1s;
+/*  margin: -2px;
+*/}
+
+a:active {
+  background-color: white;
+  color: black;
+}
+
+#content {
+  padding-top: 5%;
+  margin-left: 2%;
+}
+
+#grid {
+  margin: 5%;
+}
+
+img {
+  height: 200px;
+  filter: grayscale(100%) blur(1px);
+/*  -webkit-filter: grayscale(100%) blur(1px);
+*/  transition:filter .5s;
+/*  -webkit-transition: -webkit-filter 300ms ease-in-out;
+*/}
+
+img:hover {
+  filter: none;
+}
+
+
