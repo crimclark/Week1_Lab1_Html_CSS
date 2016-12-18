@@ -67,11 +67,11 @@ a:active {
 
 img {
   height: 200px;
-  filter: grayscale(100%) blur(1px);
-/*  -webkit-filter: grayscale(100%) blur(1px);
-*/  transition:filter 1.5s;
-/*  -webkit-transition: -webkit-filter 300ms ease-in-out;
-*/}
+  filter: grayscale(100%) blur(1px) invert(100%);
+  border: 1px solid black;
+  transition:all 1.5s;
+  border-radius: 3px;
+}
 
 img:hover {
   filter: none;
