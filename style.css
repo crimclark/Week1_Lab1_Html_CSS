@@ -69,7 +69,7 @@ img {
   height: 200px;
   filter: grayscale(100%) blur(1px);
 /*  -webkit-filter: grayscale(100%) blur(1px);
-*/  transition:filter .5s;
+*/  transition:filter 1.5s;
 /*  -webkit-transition: -webkit-filter 300ms ease-in-out;
 */}
 
