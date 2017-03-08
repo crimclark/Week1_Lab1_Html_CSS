@@ -2,30 +2,183 @@
 <html>
 <head>
   <title>My Portfolio</title>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+
+
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <nav>
-  <span id="name">Tim Clark</span>
-    <ul>
-      <li><a href="#" class="navlink">Code</a></li>
-      <li><a href="#" class="navlink">Music</a></li>
-      <li><a href="#" class="navlink">About</a></li>
-      <li><a href="#" class="navlink">Contact</a></li>
-    </ul>
-  </nav>
-  <div id="content">
-    <div id="grid">
-      <a href="https://crimclark.github.io/project_01_build_a_game/" target="_blank"><img src="simon.png"></a>
-      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  <nav id="nav">
+    <span id="name">Tim Clark</span>
+    <div id="navlinks">
+      <ul>
+        <li><a href="#about" class="navlink">About</a></li>
+        <li><a href="#myprojects" class="navlink">Projects</a></li>
+        <li><a href="#contact" class="navlink">Contact</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
+  <div id="content">
+    <div id="greeting-wrapper">
+      <div class="toptriangle"></div>
+        <div id="greeting">
+          <h3>
+            <span class="bigger">Hi!</span> my name is <br><span class="bigger">Tim Clark</span>, and I am a <br><span class="bigger">full stack web developer</span> <br>from <span class="bigger">Los Angeles, CA.</span>
+          </h3>
+        </div>
+      <div class="bottomtriangle"></div>
+    <a name="about"></a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="about-wrapper">
+        <span class="about-heading">About Me</span>
+        <div id="about-text">
+          I am a web developer who works primarily in JavaScript, React, Node/Express, and MongoDB.
+          As a longtime musician, I came to coding through an interest in the intersection between art and technology.
+          Currently I am working on improving my Ambient Music App
+          and porting it to mobile using React Native.
+        </div>
+        <div class="devicons">
+          <a class="icon-link" href="https://github.com/crimclark" target="_blank"><i class="devicon-github-plain"></i></a>
+          <a class="linkedin-link" href="https://www.linkedin.com/in/timclark0918" target="_blank"><i class="fa fa-linkedin" id="linkedin" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="skill-section">
+      <div class="toptriangle"></div>
+
+
+        <div id="skills">
+          <span class="heading">Skills</span>
+          <div class="devicons">
+            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            <i class="devicon-angularjs-plain-wordmark"></i>
+            <i class="devicon-bootstrap-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-jquery-plain-wordmark"></i>
+            <i class="devicon-mongodb-plain-wordmark"></i>
+            <i class="devicon-nodejs-plain-wordmark"></i>
+            <i class="devicon-postgresql-plain-wordmark"></i>
+            <i class="devicon-rails-plain-wordmark"></i>
+            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-ruby-plain-wordmark"></i>
+            <i class="devicon-sass-original"></i>
+          </div>
+
+        </div>
+
+      <div class="bottomtriangle"></div>
+    </div class="skill-section">
+<!--     <a name="project"></a> -->
+    <div class="divider" id="myprojects"></div>
+    <div id="projects-wrapper">
+      <div id="heading-container">
+        <span class="projects-heading">Projects</span>
+      </div>
+      <div id="projects">
+        <div class="project">
+          <a href="https://crimclark.github.io/project_04" target="_blank"><img src="ambient.png" class="screenshot"></a>
+          <div class="description">
+            <h2 class="project-title">Drift FM</h2>
+            <p>Generative music app built in React that creates random chords
+                and melodies, and allows users to process audio from the freesound.org
+                API. Users can change song settings and save their unique
+                composition to a database.</p>
+            <div class="buttons">
+              <form target="_blank">
+                <button class="button" formaction="https://crimclark.github.io/project_04/" target="_blank">Check it Out</button><button formaction="https://github.com/crimclark/project_04" class="button">See the Code</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://arcane-wave-24103.herokuapp.com/" target="_blank"><img src="trivia.png" class="screenshot"></a>
+          <div class="description">
+            <h2 class="project-title">guessWut</h2>
+            <p>Trivia web app which pulls questions from a 3rd party API and
+                allows users to compete in real time over web sockets. </p>
+            <div class="buttons">
+              <form target="_blank">
+                <button class="button" formaction="https://arcane-wave-24103.herokuapp.com/">Check it Out</button><button formaction="https://github.com/WDI-DTLA-41-Group-3/Trivia-Game" class="button">See the Code</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://thawing-dusk-60687.herokuapp.com/" target="_blank"><img src="fileshare.png" class="screenshot"></a>
+          <div class="description">
+            <h2 class="project-title">StoreIt</h2>
+            <p>Web application where users can upload files that are stored
+              in S3 cloud storage on Amazon Web Services. Meta data is stored
+              in MongoDB. This project was built in a one week sprint..</p>
+            <div class="buttons">
+              <form target="_blank">
+                <button class="button" formaction="https://thawing-dusk-60687.herokuapp.com/">Check it Out</button><button formaction="https://github.com/crimclark/project_02_crud_app" class="button">See the Code</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://crimclark.github.io/project_01_build_a_game/" target="_blank"><img src="simon.png" class="screenshot"></a>
+          <div class="description">
+            <h2 class="project-title">Simon Memory Game</h2>
+            <p>Recreation of the classic memory game. The computer plays
+              back a random sequence of colors and the user must click on
+              the same sequence to advance to the next level, where the
+              sequence gets longer and faster. This game was built in a one
+              week sprint.</p>
+            <div class="buttons">
+              <form target="_blank">
+                <button class="button" formaction="https://crimclark.github.io/project_01_build_a_game/">Check it Out</button><button formaction="https://github.com/crimclark/project_01_build_a_game" class="button">See the Code</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <a name="contact"></a>
+    <div class="divider"></div>
+
+    <div id="contact-wrapper">
+      <span class="about-heading">Get in Touch!</span>
+        <div class="contact-text">
+          <div id="email-container">
+            <a class="email" href=mailto:"tbartonclark@gmail.com">tbartonclark@gmail.com</a>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="email">Download my Resume</a>
+          </div>
+          <div class="bottom-devicons">
+            <a class="icon-link" href="https://github.com/crimclark" target="_blank"><i class="devicon-github-plain"></i></a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/timclark0918" target="_blank"><i class="fa fa-linkedin" id="linkedin" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="divider">
+      <div id="copyright">
+      ©2017 Tim Clark
+      </div>
+    </div>
+
+</div>
+  <script src="https://use.fontawesome.com/7d25b37559.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
