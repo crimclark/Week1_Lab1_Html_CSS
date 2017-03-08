@@ -1,14 +1,34 @@
-// var description = document.querySelector('.description');
+smoothScroll.init();
 
-// var img = document.querySelector('img');
+// $('#about-text').on('scrollSpy:enter', function() {
+//     $('.navlink').css('backgroundColor', 'white');
+//     $('.navlink').css('color', 'black');
+//     $('#about-link').css('backgroundColor', 'black');
+//     $('#about-link').css('color', 'white');
+// });
 
-// function makeOpaque() {
-//   description.classList.add('opaque');
-// }
+// $('#projects').on('scrollSpy:enter', function() {
+//     $('.navlink').css('backgroundColor', 'white');
+//     $('.navlink').css('color', 'black');
+//     $('#projects-link').css('backgroundColor', 'black');
+//     $('#projects-link').css('color', 'white');
+// });
 
-// function makeInvsbl() {
-//   description.classList.remove('opaque');
-// }
+// $('#contact-wrapper').on('scrollSpy:enter', function() {
+//     $('.navlink').css('backgroundColor', 'white');
+//     $('.navlink').css('color', 'black');
+//     $('#contact-link').css('backgroundColor', 'black');
+//     $('#contact-link').css('color', 'white');
+// });
 
-// img.addEventListener('mouseover', makeOpaque);
-// img.addEventListener('mouseleave', makeInvsbl);
+// $('#contact-wrapper').on('scrollSpy:exit', function() {
+//     $('.navlink').css('backgroundColor', 'white');
+//     $('.navlink').css('color', 'black');
+//     $('#projects-link').css('backgroundColor', 'black');
+//     $('#projects-link').css('color', 'white');
+// });
+
+// $('#about-text').scrollSpy();
+// $('#projects').scrollSpy();
+// $('#contact-wrapper').scrollSpy();
+
