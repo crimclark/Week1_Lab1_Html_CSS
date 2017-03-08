@@ -24,30 +24,34 @@ nav {
   z-index: 1;
   opacity: .9;
   height: 55px;
-/*  margin: 0;*/
 }
 
 
 ul {
-  text-align: justify;
-  margin: 2% 5% 0 65%;
-/*  width: 500px;*/
+  position: absolute;
+  right: 0;
+  padding: 7px;
 }
 
 li {
   display: inline-block;
+  padding: 0 40px 0 40px;
 }
 
-ul:after {
-  content: '';
-  width: 100%;
-  display: inline-block;
-  clear: both;
+@media (max-width: 675px) {
+  li {
+    padding: 0 20px 0 20px;
+  }
 }
+
+
 
 #navlinks {
   width: 100%;
+  text-align: right;
+  position: relative;
 }
+
 .navlink {
   text-decoration: none;
   color: black;
@@ -164,7 +168,7 @@ a:active {
 
 #greeting {
   margin: 0 auto;
-  width: 500px;
+  width: 50%;
   text-align: center;
   position: relative;
   bottom: 110px;
@@ -178,8 +182,9 @@ a:active {
   font-size: 1.5em;
 }
 
+
 .devicons {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
   font-size: 80px;
 }
@@ -430,4 +435,63 @@ a:active {
 
 h2, h3 {
   font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  .project {
+    width: 75%;
+    height: auto;
+    padding: 0 0 60px 0;
+    margin-bottom:50px;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+
+  .screenshot{
+    margin-bottom: 20px;
+  }
+
+  .screenshot {
+    width: 130px;
+    height: 130px;
+  }
+
+}
+
+@media (max-width: 519px) {
+  ul {
+    display: table;
+    width: 100%;
+  }
+
+  li {
+    display: table-cell;
+    position: relative;
+
+    text-align: center;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .project{
+    width: 90%;
+    height: auto;
+    padding: 0 0 60px 0;
+  }
+
+  .screenshot{
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+/*    bottom: 0;*/
+/*    display: table;
+*/    position: inline-block;
+    padding-top: 200px;
+  }
 }
