@@ -467,10 +467,15 @@ h2, h3 {
     width: 100%;
   }
 
+  #navlinks {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   li {
     display: table-cell;
     position: relative;
-
+    padding: 0;
     text-align: center;
   }
 
