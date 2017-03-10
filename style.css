@@ -166,14 +166,14 @@ a:active {
   position: relative;
 }
 
-div#greeting {
+/*div#greeting {
     box-shadow: 19px 20px 0px 0px black;
 }
 
 
 h3 {
     box-shadow: -20px -20px 0px 0px black;
-}
+}*/
 
 #greeting {
   margin: 0 auto;
