@@ -389,28 +389,14 @@ h3 {
   transition: background-color 1s;
 }
 
-/*.linkedin-link {
-  text-decoration: none;
-  color: #049372;
-  border: 1px solid white;
-  border-radius: 12px;
-  padding: 12px;
-}
-
-.linkedin-link:hover {
-  font-weight: bold;
-  color: white;
-  background-color: #049372;
-}
-*/
 .email:hover {
-/*  font-size: 15px;*/
-/*  padding: 5px;
-  font-weight: bold;*/
   color:black;
   transition: color .5s;
-/*  background-color: white;
-  color: #26C281;*/
+}
+
+.email:active {
+  color:white;
+  background-color: #049372;
 }
 
 #linkedin{
