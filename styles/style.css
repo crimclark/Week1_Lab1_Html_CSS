@@ -63,31 +63,30 @@ a:active {
 #grid {
   width: 100%; }
 
-.heading {
-  text-align: center;
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
+.black-heading, .white-heading {
   font-size: 2em;
   padding: 20px; }
 
-.about-heading {
-  text-align: center;
+.black-heading {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black; }
+
+.white-heading {
   border-bottom: 3px solid white;
-  border-top: 3px solid white;
-  font-size: 2em;
-  padding: 20px;
-  color: white; }
+  border-top: 3px solid white; }
 
 .divider {
   height: 80px;
   background-color: #26C281;
   box-shadow: 0 0 1em; }
 
+.section-wrapper, .about-wrapper {
+  overflow: auto;
+  position: relative; }
+
 .about-wrapper {
   background-color: #049372;
   color: white;
-  overflow: auto;
-  position: relative;
   padding-top: 70px;
   text-align: center; }
 
@@ -123,10 +122,6 @@ a:active {
   bottom: 0;
   position: absolute; }
 
-#greeting-wrapper {
-  overflow: auto;
-  position: relative; }
-
 #greeting {
   margin: 0 auto;
   width: 50%;
@@ -141,31 +136,21 @@ a:active {
 .bigger {
   font-size: 1.5em; }
 
+.devicons, .bottom-devicons {
+  font-size: 80px; }
+
 .devicons {
   padding-top: 50px;
-  padding-bottom: 30px;
-  font-size: 80px; }
+  padding-bottom: 30px; }
 
 .bottom-devicons {
   padding-top: 30px;
-  padding-bottom: 20px;
-  font-size: 80px; }
-
-.skill-section {
-  position: relative;
-  overflow: auto; }
+  padding-bottom: 20px; }
 
 #projects-wrapper {
   background-color: white;
   padding-top: 70px;
   width: 100%; }
-
-.projects-heading {
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
-  font-size: 2em;
-  padding: 20px;
-  color: black; }
 
 #heading-container {
   text-align: center;
@@ -221,8 +206,8 @@ a:active {
     background-color: white;
     border: 2px solid #049372;
     color: #049372;
-    transition: color .5s;
-    transition: background-color .5s; }
+    transition: color 0.5s;
+    transition: background-color 0.5s; }
   .button:focus {
     outline: none;
     outline: 0; }
@@ -276,9 +261,6 @@ a:active {
   #linkedin:hover {
     background-color: white;
     color: #049372;
-    position: relative;
-    border-radius: 12px;
-    font-size: .8em;
     transition: color 1s;
     transition: background-color 1s; }
 
